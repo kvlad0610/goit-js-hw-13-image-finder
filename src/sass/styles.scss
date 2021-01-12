@@ -25,9 +25,10 @@ body {
   justify-content: center;
   input {
     display: block;
-
     height: 40px;
     font-size: larger;
+    margin-bottom: 20px;
+    margin-top: 20px;
   }
 }
 .photo-card {
@@ -35,8 +36,13 @@ body {
 }
 
 img {
-  height: 300px;
-  width: 450px;
+  height: 200px;
+  width: 300px;
+}
+
+.stats {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .button {
@@ -49,6 +55,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-.button.is-hidden {
+.is-hidden {
   display: none;
 }
