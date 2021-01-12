@@ -24,12 +24,12 @@ function fetchHits() {
   newsService.fetchHits().then(hits => {
     updateHitsMarkup(hits);
     refs.loadMoreBtn.classList.remove('is-hidden');
-
-    console.dir(document.documentElement);
-
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: 'smooth',
-    });
+    console.log(newsService.page);
+    if (newsService.page > 2) {
+      window.scrollBy({
+        top: window.innerHeight,
+        behavior: 'smooth',
+      });
+    }
   });
 }
